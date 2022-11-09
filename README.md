@@ -9,12 +9,12 @@
 ├───assets
 │   ├───img
 │   │   ├───extra
-│   │   ├───galeria
+│   │   ├───favicon
 │   │   └───perfil
-│   ├───logos
-│   └───media
+│   └───logos
 ├───css
-└───doc
+├───doc
+└───pages
 ```
 
 IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
