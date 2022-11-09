@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+:root {
+    --wheat: #F5DEB3;
+    --silver: #C0C0C0;
+    --gris: #7F7F7F;
+    --springgreen: #00FF7F;
+    --amarillo:#FFFF00;
+    --gris_titulo: InactiveCaptionText;
+    --gris_text: InactiveCaptionText;
+    --negro_text: InfoText;
+    --blanco: whitesmoke;
+    --size_menu: 1.8rem;
+    --size_box_text: 1.1rem;
+    --space_letter: 2px;
+    --space_letter_copyright: 10px;
+}
+
+* {   /* Reseteamos el body quitando los estilos por defecto, y agregamos fixed para que solo podamos usar la pantalla estatica sin scroll*/
+    font-family: 'Roboto mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER ICONS AND LOGO */
+header .header-icons-logo-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100px;
+    
+}
+
+header .header-icons-logo-container .logo-contanier {
+
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+header .header-icons-logo-container .logo-contanier h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 400px;
+    letter-spacing: var(--space_letter);
+    color: var(--wheat);
+}
+
+header .header-icons-logo-container .logo-contanier  img {
+    width: 80px;
+}
+
+header .header-icons-logo-container .icons-container {
+
+    width: 300px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .header-icons-logo-container .icons-container img {
+    width: 30px;
+}
+
+
+/* HEADER NAV */
+header .header-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+header .header-nav-container ul {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--wheat);;
+}
+
+header .header-nav-container li {
+    margin-top: 25px;
+    display: inline-block;
+}
+
+header .header-nav-container li a{
+    letter-spacing: var(--space_letter);
+    font-weight: 200;
+    padding: 15px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--gris_titulo);
+}
+
+header .header-nav-container li a:hover{
+    font-weight: 800;
+    color: var(--negro_text);
+}
+
+/* FOOTER */
+.footer-container {
+    margin-top: 150px;
+    height: 50vh;
+    background-color: var(--springgreen);
+    border-top: 6px dotted var(--gris_text);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-container .footer-nav-container {
+    width: 300px;
+    padding: 15px;
+    justify-self: flex-end;
+    align-self: center;
+    border-bottom: 16px double var(--negro_text);
+}
+
+.footer-container .footer-nav-container h4 {
+    letter-spacing: var(--space_letter);
+    color: var(--negro_text);
+    font-size: var(--size_menu);
+}
+
+.footer-container .footer-nav-container ul {  
+    margin-top: 30px;  
+    letter-spacing: var(--space_letter);
+    display: inline-block;
+    list-style-type: none;
+}
+
+.footer-container .footer-nav-container ul li {
+    margin-top: 5px;
+}
+
+.footer-container .footer-nav-container ul li a {
+    text-decoration: none;
+    font-size: var(--size_box_text);
+    color: var(--negro_text);
+}
+
+.footer-container .footer-nav-container ul li a:hover {
+    font-weight: 900;
+    color: var(--negro_text);
+}
+
+.footer-container .footer-text-container {
+    color: var(--negro_text);
+    font-weight: 900;
+    display: flex;
+
+}
+
+.footer-container .footer-text-container p{
+    justify-self: center;
+    align-self: center;
+    font-size: var(--size_menu);
+    letter-spacing: var(--space_letter_copyright);
+    margin-left: 50px;
+}
+
+
+/* CONTENT MAIN HOME */
+.home-main-container {
+    background-color: var(--silver);
+    box-sizing: border-box;
+    margin-top: 80px;
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-main-container .home-main-img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-main-container .home-main-img-container img{
+    width: 600px;
+    -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+    -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+    box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+}
+
+.home-main-container .home-main-text-container {
+    width: 500px;    
+    padding: 25px;
+    background-color: var(--blanco);
+}
+
+.home-main-container .home-main-text-container h3 {
+    letter-spacing: var(--space_letter);
+    color: var(-gris_text);
+    font-size: var(--size_menu);
+}
+
+.home-main-container .home-main-text-container p {
+    letter-spacing: var(--space_letter);
+    margin-top: 50px;
+    padding-left: 15px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text);
+    border-left: 7px solid var(--wheat);
+}
