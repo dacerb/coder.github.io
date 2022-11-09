@@ -162,6 +162,19 @@ header .header-nav-container li a:hover{
     margin-left: 50px;
 }
 
+.footer-container .footer-text-container a{
+    background-color: var(--blanco);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.footer-container .footer-text-container a img{
+    width: 60px;
+}
+
+
 
 /* CONTENT MAIN HOME */
 .home-main-container {
