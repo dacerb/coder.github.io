@@ -17,7 +17,7 @@
 └───doc
 ```
 
-IR A  [**DECOD SITE**](https://github.com/dacerb/full-stack-coderhouse/tree/PreEntrega1Acerbo/desarrollo-web)
+IR A  [**DECOD SITE**](https://github.com/dacerb/full-stack-coderhouse/)
 ---
 
 [**Consigna**](./doc/coder-preentrega.pdf)
