@@ -27,11 +27,19 @@
     padding: 0;
 }
 
+/* SOMBRA GENERAL */
 .shadow_box {
     -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
     -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
     box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
 }
+
+/* MAXIMO DEL CONTENEDOR */
+.container_max_size {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 /* CFG General de estilos base */
 
 /* -------------------------------------------- INICIO DEFINICION Estilos generales de todas las paginas ---------------------------------------------------- */
@@ -206,14 +214,6 @@ header .header-nav-container li a:hover{
 
 /* FOOTER: Estilos Generales del SITIO */
 
-/* MAXIMO DEL CONTENEDOR */
-.container_max_size {
-    max-width: 1280;
-    margin: 0 auto;
-}
-
-/* Estilos generales de todas las paginas */
-
 /* -------------------------------------------- FIN DEFINICIO Estilos generales de todas las paginas ---------------------------------------------------- */
 
 /* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
@@ -299,16 +299,19 @@ header .header-nav-container li a:hover{
 }
 
 .about-team-container {
-    margin-top: 100px;
+    margin: 100px auto auto auto;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(1, auto);
-    justify-content: center;
-    gap: 50px;    
+    justify-items: center;
+    padding: 20px;
+    gap: 20px;
 }
 
 .about-team-container .team-member-container {
     width: 100%;
+    max-width: 400px;
     box-sizing: border-box;
     padding: 20px;
     border: 1px solid var(--gris_text);
