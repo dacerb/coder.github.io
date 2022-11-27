@@ -250,7 +250,7 @@ header .header-nav-container li a:hover{
 
 .home-main-container .container_max_size .home-main-text-container h3 {
     letter-spacing: var(--space_letter);
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_menu);
 }
 
@@ -285,7 +285,7 @@ header .header-nav-container li a:hover{
 
 .about-us-detail-container .text-container h2 {
     letter-spacing: var(--space_letter);
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_menu);
 }
 
