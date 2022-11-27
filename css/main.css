@@ -118,57 +118,65 @@ header .header-nav-container li a:hover{
 /* FOOTER: Estilos Generales del SITIO */
 .footer-container {
     margin-top: 150px;
-    height: 50vh;
     background-color: var(--springgreen);
     border-top: 6px dotted var(--gris_text);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-.footer-container .footer-nav-container {
+.footer-container .container_max_size {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+    padding: 10px;
+}
+
+.footer-container .container_max_size .footer-nav-container {
     width: 300px;
     padding: 15px;
-    justify-self: flex-end;
-    align-self: center;
     border-bottom: 16px double var(--negro_text);
 }
 
-.footer-container .footer-nav-container h4 {
+.footer-container .container_max_size .footer-nav-container h4 {
     letter-spacing: var(--space_letter);
     color: var(--negro_text);
     font-size: var(--size_menu);
 }
 
-.footer-container .footer-nav-container ul {  
+.footer-container .container_max_size .footer-nav-container ul {  
     margin-top: 30px;  
     letter-spacing: var(--space_letter);
     display: inline-block;
     list-style-type: none;
 }
 
-.footer-container .footer-nav-container ul li {
+.footer-container .container_max_size .footer-nav-container ul li {
     margin-top: 5px;
 }
 
-.footer-container .footer-nav-container ul li a {
+.footer-container .container_max_size .footer-nav-container ul li a {
     text-decoration: none;
     font-size: var(--size_box_text);
     color: var(--negro_text);
 }
 
-.footer-container .footer-nav-container ul li a:hover {
+.footer-container .container_max_size .footer-nav-container ul li a:hover {
     font-weight: 900;
     color: var(--negro_text);
 }
 
-.footer-container .footer-text-container {
+.footer-container .container_max_size .footer-text-container {
+    margin-top: 20px;
     color: var(--negro_text);
     font-weight: 900;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 
 }
 
-.footer-container .footer-text-container p{
+.footer-container .container_max_size .footer-text-container p{
     justify-self: center;
     align-self: center;
     font-size: var(--size_menu);
@@ -176,20 +184,28 @@ header .header-nav-container li a:hover{
     margin-left: 50px;
 }
 
-.footer-container .footer-text-container a{
+.footer-container .container_max_size .footer-text-container a {
     background-color: var(--blanco);
     box-sizing: border-box;
-    display: flex;
+   
     justify-content: center;
     align-items: center;
     padding: 10px;
+    border-radius: 50%;
 }
 
-.footer-container .footer-text-container a img{
+.footer-container .container_max_size .footer-text-container a img{
     width: 60px;
 }
 
 /* FOOTER: Estilos Generales del SITIO */
+
+/* MAXIMO DEL CONTENEDOR */
+.container_max_size {
+    max-width: 1444px;
+    margin: 0 auto;
+}
+
 /* Estilos generales de todas las paginas */
 
 /* -------------------------------------------- FIN DEFINICIO Estilos generales de todas las paginas ---------------------------------------------------- */
@@ -198,37 +214,41 @@ header .header-nav-container li a:hover{
 .home-main-container {
     background-color: var(--silver);
     box-sizing: border-box;
-    margin-top: 80px;
+    margin: 80px auto auto auto;
     width: 100%;
     padding: 25px;
+    
+}
+.home-main-container .container_max_size {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
-.home-main-container .home-main-img-container {
-    display: flex;
-    justify-content: flex-end;
+.home-main-container .container_max_size .home-main-img-container {
+    justify-self: flex-end;
 }
 
-.home-main-container .home-main-img-container img{
+.home-main-container .container_max_size .home-main-img-container img{
     width: 100%;
-    object-fit: contain;
     max-width: 500px;
+    object-fit: cover;
 }
 
-.home-main-container .home-main-text-container {
-    max-width: 500px;    
+.home-main-container .container_max_size .home-main-text-container {
+    box-sizing: border-box;
+    width: 100%;  
+    max-width: 500px;
     padding: 25px;
     background-color: var(--blanco);
 }
 
-.home-main-container .home-main-text-container h3 {
+.home-main-container .container_max_size .home-main-text-container h3 {
     letter-spacing: var(--space_letter);
     color: var(-gris_text);
     font-size: var(--size_menu);
 }
 
-.home-main-container .home-main-text-container p {
+.home-main-container .container_max_size .home-main-text-container p {
     letter-spacing: var(--space_letter);
     margin-top: 50px;
     padding-left: 15px;
@@ -328,7 +348,7 @@ header .header-nav-container li a:hover{
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column: 300 / 600;
+
 }
 
 .contact-main .contact-main-container-text {
@@ -356,11 +376,8 @@ header .header-nav-container li a:hover{
 }
 
 .contact-main .contact-main-form-container {
-    
-}
-
-.contact-main .contact-main-form-container {
     padding: 25px;
+    margin-right: 100px;
     background-color: var(--springgreen);
 }
 
@@ -478,11 +495,9 @@ header .header-nav-container li a:hover{
     background-color: var(--springgreen);
 }
 
-
-/* VIDEO estlilos */
-.galery-main .galery-main-container-items video {
-    
-}
-
-
 /* -------------------------------------------- FIN CONTENT MAIN GALERIA ---------------------------------------------*/
+
+/* -------------------------------------------- INICIO CONTENT MAIN BLOG ---------------------------------------------*/
+
+
+/* -------------------------------------------- FIN CONTENT MAIN BLOG ---------------------------------------------*/
