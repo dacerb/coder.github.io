@@ -13,6 +13,8 @@
     --blanco: whitesmoke;
     --size_menu: 1.8rem;
     --size_box_text: 1.1rem;
+    --size_menu--card: 1.4rem;
+    --size_box_text--card: 1rem;
     --space_letter: 2px;
     --space_letter_copyright: 10px;
     /* --amarillo:#FFFF00; Revisar si es necesario....! */
@@ -22,6 +24,12 @@
     font-family: 'Roboto mono', monospace;
     margin: 0;
     padding: 0;
+}
+
+.shadow_box {
+    -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+    -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+    box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
 }
 /* CFG General de estilos base */
 
@@ -203,9 +211,6 @@ header .header-nav-container li a:hover{
 
 .home-main-container .home-main-img-container img{
     width: 600px;
-    -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
-    -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
-    box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
 }
 
 .home-main-container .home-main-text-container {
@@ -229,4 +234,83 @@ header .header-nav-container li a:hover{
     border-left: 7px solid var(--wheat);
 }
 
-/* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
+/* -------------------------------------------- FIN CONTENT MAIN HOME ---------------------------------------------*/
+
+/* -------------------------------------------- INICIO CONTENT MAIN QUENES SOMOS ---------------------------------------------*/
+
+.about-us-main {
+}
+
+.about-us-detail-container   {
+    background-color: var(--silver);
+    margin-top: 80px;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.about-us-detail-container .text-container {
+    width: 80%;    
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--blanco);
+}
+
+.about-us-detail-container .text-container h2 {
+    letter-spacing: var(--space_letter);
+    color: var(-gris_text);
+    font-size: var(--size_menu);
+}
+
+.about-us-detail-container .text-container .body-text{
+    letter-spacing: var(--space_letter);
+    margin-top: 50px;
+    padding-left: 15px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text);
+    border-left: 7px solid var(--wheat);
+}
+
+.about-team-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    gap: 50px;    
+}
+
+.about-team-container .team-member-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid var(--silver);
+    border-top: 50px solid var(--gris_text);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.about-team-container .team-member-container img{
+    width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.about-team-container .team-member-container h4{
+    margin-top: 25px;
+    letter-spacing: var(--space_letter);
+    color: var(-gris_text);
+    font-size: var(--size_menu--card);
+}
+
+.about-team-container .team-member-container p{
+    letter-spacing: var(--space_letter);
+    margin-top: 25px;
+    padding-left: 15px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text--card);
+    border-left: 7px solid var(--wheat);
+}
+
+/* -------------------------------------------- FIN CONTENT MAIN QUENES SOMOS ---------------------------------------------*/
