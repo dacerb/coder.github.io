@@ -1,3 +1,5 @@
+/* CFG General de estilos base */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
 
 :root {
@@ -5,7 +7,6 @@
     --silver: #C0C0C0;
     --gris: #7F7F7F;
     --springgreen: #00FF7F;
-    --amarillo:#FFFF00;
     --gris_titulo: InactiveCaptionText;
     --gris_text: InactiveCaptionText;
     --negro_text: InfoText;
@@ -14,6 +15,7 @@
     --size_box_text: 1.1rem;
     --space_letter: 2px;
     --space_letter_copyright: 10px;
+    /* --amarillo:#FFFF00; Revisar si es necesario....! */
 }
 
 * {   /* Reseteamos el body quitando los estilos por defecto, y agregamos fixed para que solo podamos usar la pantalla estatica sin scroll*/
@@ -21,9 +23,11 @@
     margin: 0;
     padding: 0;
 }
+/* CFG General de estilos base */
 
+/* -------------------------------------------- INICIO DEFINICION Estilos generales de todas las paginas ---------------------------------------------------- */
 
-/* HEADER ICONS AND LOGO */
+/* HEADER ICONS AND LOGO, Estilos Generales del SITIO*/
 header .header-icons-logo-container {
     margin-top: 30px;
     display: grid;
@@ -67,9 +71,9 @@ header .header-icons-logo-container .icons-container {
 header .header-icons-logo-container .icons-container img {
     width: 30px;
 }
+/* HEADER ICONS AND LOGO, Estilos Generales del SITIO*/
 
-
-/* HEADER NAV */
+/* HEADER NAV Estilos Generales del SITIO */
 header .header-nav-container {
     display: flex;
     justify-content: center;
@@ -100,8 +104,9 @@ header .header-nav-container li a:hover{
     font-weight: 800;
     color: var(--negro_text);
 }
+/* HEADER NAV Estilos Generales del SITIO */
 
-/* FOOTER */
+/* FOOTER: Estilos Generales del SITIO */
 .footer-container {
     margin-top: 150px;
     height: 50vh;
@@ -170,13 +175,17 @@ header .header-nav-container li a:hover{
     align-items: center;
     padding: 10px;
 }
+
 .footer-container .footer-text-container a img{
     width: 60px;
 }
 
+/* FOOTER: Estilos Generales del SITIO */
+/* Estilos generales de todas las paginas */
 
+/* -------------------------------------------- FIN DEFINICIO Estilos generales de todas las paginas ---------------------------------------------------- */
 
-/* CONTENT MAIN HOME */
+/* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
 .home-main-container {
     background-color: var(--silver);
     box-sizing: border-box;
@@ -219,3 +228,5 @@ header .header-nav-container li a:hover{
     font-size: var(--size_box_text);
     border-left: 7px solid var(--wheat);
 }
+
+/* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
