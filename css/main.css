@@ -253,6 +253,7 @@ header .header-nav-container li a:hover{
 
 .about-us-detail-container .text-container {
     width: 80%;    
+    min-height: 350px;
     margin: 0 auto;
     padding: 25px;
     background-color: var(--blanco);
@@ -285,9 +286,9 @@ header .header-nav-container li a:hover{
 .about-team-container .team-member-container {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
-    border: 3px solid var(--silver);
-    border-top: 50px solid var(--gris_text);
+    padding: 20px;
+    border: 1px solid var(--gris_text);
+    border-top: 40px solid var(--springgreen);
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;    
@@ -301,6 +302,7 @@ header .header-nav-container li a:hover{
 
 .about-team-container .team-member-container h4{
     margin-top: 25px;
+    padding-left: 5px;
     letter-spacing: var(--space_letter);
     color: var(-gris_text);
     font-size: var(--size_menu--card);
@@ -309,10 +311,17 @@ header .header-nav-container li a:hover{
 .about-team-container .team-member-container p{
     letter-spacing: var(--space_letter);
     margin-top: 25px;
-    padding-left: 15px;
+    padding-left: 25px;
     color: var(-gris_text);
     font-size: var(--size_box_text--card);
     border-left: 7px solid var(--wheat);
 }
 
 /* -------------------------------------------- FIN CONTENT MAIN QUENES SOMOS ---------------------------------------------*/
+
+
+/* -------------------------------------------- INICI CONTENT MAIN CONTACTO ---------------------------------------------*/
+
+
+
+/* -------------------------------------------- FIN CONTENT MAIN CONTACTO ---------------------------------------------*/
