@@ -40,33 +40,44 @@
         <section>
 
         </section>
-        <section>
-            <div>
-                <h2>Contacto:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, esse!</p>
+        <section class="contact-main shadow_box">
+            <div class="contact-main-container-text">
+                <h2>Contacto</h2>
+                <p class="contact-main-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, esse!</p>
             </div>
-            <div>
+            <div class="contact-main-form-container">
                 <form action="#" method="GET">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" placeholder="your name">
+                    <div class="form-inpunt--container">
+                        <label for="name">Nombre:</label>
+                        <input class="text-input" type="text" id="name" placeholder="your name">
+                    </div>
     
-                    <label for="lastname">Apellido:</label>
-                    <input type="text" id="lastname" placeholder="your lastname">
+                    <div class="form-inpunt--container">
+                        <label for="lastname">Apellido:</label>
+                        <input class="text-input" type="text" id="lastname" placeholder="your lastname">
+                    </div>
     
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="your email">
+                    <div class="form-inpunt--container">
+                        <label for="email">Email:</label>
+                        <input class="text-input" type="email" id="email" placeholder="your email">
+                    </div>
     
-                    <label for="yes">Recibir notificaciones:</label>       
-                    <input type="radio" id="yes" name="notifiacion" value="si">
+                    <div class="form-inpunt--container notifications">
+                        <label for="yes">Recibir notificaciones:</label>       
+                        <input type="radio" id="yes" name="notifiacion" value="si">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="notifiacion" value="no">
+                    </div>
                     
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="notifiacion" value="no">
-                    
-                    <label for="textarea">Dejanos tu comentario:</label>
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    <div class="form-inpunt--container comment">
+                        <label for="textarea">Dejanos tu comentario:</label>
+                        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    </div>
     
-                    <input type="submit" value="Submit">
-                    <input type="reset">
+                    <div class="form-inpunt--container button">
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </div>
                 </form>
             </div>
         </section>

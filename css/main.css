@@ -240,9 +240,6 @@ header .header-nav-container li a:hover{
 
 /* -------------------------------------------- INICIO CONTENT MAIN QUENES SOMOS ---------------------------------------------*/
 
-.about-us-main {
-}
-
 .about-us-detail-container   {
     background-color: var(--silver);
     margin-top: 80px;
@@ -322,6 +319,92 @@ header .header-nav-container li a:hover{
 
 /* -------------------------------------------- INICI CONTENT MAIN CONTACTO ---------------------------------------------*/
 
+.contact-main {
+    background-color: var(--silver);
+    box-sizing: border-box;
+    margin-top: 80px;
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 300 / 600;
+}
 
+.contact-main .contact-main-container-text {
+    max-width: 300px;    
+    padding: 25px;
+    justify-self: end;
+    background-color: var(--blanco);
+}
+
+.contact-main .contact-main-container-text h2{
+    margin-top: 25px;
+    padding-left: 5px;
+    letter-spacing: var(--space_letter);
+    color: var(--gris_titulo);
+    font-size: var(--size_menu);
+}
+
+.contact-main .contact-main-container-text p{
+    letter-spacing: var(--space_letter);
+    margin-top: 50px;
+    padding-left: 25px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text);
+    border-left: 7px solid var(--wheat);
+}
+
+.contact-main .contact-main-form-container {
+    
+}
+
+.contact-main .contact-main-form-container {
+    padding: 25px;
+    background-color: var(--springgreen);
+}
+
+.contact-main .contact-main-form-container .form-inpunt--container {
+    margin-top: 5px;
+    width: 100%;
+    letter-spacing: var(--space_letter);
+    color: var(-gris_text);
+    font-size: var(--size_box_text--card);
+}
+
+.contact-main .contact-main-form-container .form-inpunt--container .text-input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: var(--space_letter);
+    font-size: var(--size_box_text--card);
+    font-weight: 900;
+    color: var(--negro_text);
+}
+
+.contact-main .contact-main-form-container .comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-main .contact-main-form-container .comment  textarea{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 20vh;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contact-main .contact-main-form-container .form-inpunt--container.button {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.contact-main .contact-main-form-container .form-inpunt--container.button input { 
+    padding: 5px;
+    width: 50%;
+    min-width: 115px;
+
+}
 
 /* -------------------------------------------- FIN CONTENT MAIN CONTACTO ---------------------------------------------*/
