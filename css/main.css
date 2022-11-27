@@ -17,6 +17,7 @@
     --size_box_text--card: 1rem;
     --space_letter: 2px;
     --space_letter_copyright: 10px;
+    --opacity_green: hsla(120, 100%, 50%, 0.3)
     /* --amarillo:#FFFF00; Revisar si es necesario....! */
 }
 
@@ -294,7 +295,7 @@ header .header-nav-container li a:hover{
 .about-team-container .team-member-container img{
     width: 100px;
     margin: 0 auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .about-team-container .team-member-container h4{
@@ -408,3 +409,80 @@ header .header-nav-container li a:hover{
 }
 
 /* -------------------------------------------- FIN CONTENT MAIN CONTACTO ---------------------------------------------*/
+
+/* -------------------------------------------- INICIO CONTENT MAIN GALERIA ---------------------------------------------*/
+
+.galery-main {
+    margin-top: 80px;
+    padding:20px;
+}
+
+.galery-main .galery-main-container h2 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    letter-spacing: var(--space_letter);
+    color: var(--gris_titulo);
+    font-size: var(--size_menu);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--springgreen);
+    text-transform: uppercase;
+}
+
+.galery-main .galery-main-container-items {
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    overflow: hidden;
+}
+
+.galery-main .galery-main-container-items .item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border: 1px solid var(--gris_text);
+    border-top: 40px solid var(--springgreen);
+    border-radius: 10px;
+}
+
+.galery-main .galery-main-container-items img, video, iframe {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.galery-main .galery-main-container-items h4 {
+    display: inline;
+    padding: 8px;
+    border-radius: 15px 0 15px 0;
+    letter-spacing: var(--space_letter);
+    font-size: var(--size_menu--card);
+    background-color: var(--opacity_green);
+    color: var(-gris_text);
+    
+}
+
+.galery-main .galery-main-container-items p {
+    letter-spacing: var(--space_letter);
+    margin-top: 25px;
+    padding-left: 25px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text--card);
+    border-left: 7px solid var(--wheat);
+}
+
+.galery-main .galery-main-container-items h4:hover {
+    background-color: var(--springgreen);
+}
+
+
+/* VIDEO estlilos */
+.galery-main .galery-main-container-items video {
+    
+}
+
+
+/* -------------------------------------------- FIN CONTENT MAIN GALERIA ---------------------------------------------*/
