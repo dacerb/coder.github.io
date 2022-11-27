@@ -200,8 +200,8 @@ header .header-nav-container li a:hover{
 
 .footer-container .container_max_size .footer-text-container a {
     background-color: var(--blanco);
+    margin-top: 10px;
     box-sizing: border-box;
-   
     justify-content: center;
     align-items: center;
     padding: 10px;
