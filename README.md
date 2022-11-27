@@ -20,10 +20,10 @@
 IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
 ---
 
-[**Consigna**](./doc/coder-preentrega.pdf)
+[**Consigna**](./doc/preEntrega1/coder-preentrega.pdf)
 
-[**PDF W**ireFame](./doc/WireFramePreEntrega1.pdf)
+[**PDF W**ireFame](./doc/preEntrega1/WireFramePreEntrega1.pdf)
 
 [**Figma**](https://www.figma.com/file/eTDgxn02dVJJvCabktpbwO/WireFrame-Prototipo?node-id=50%3A7)
 
-![Alt text](./doc/Group%2039.svg)
+![Alt text](./doc/preEntrega1/Group%2039.svg)
