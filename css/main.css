@@ -210,11 +210,13 @@ header .header-nav-container li a:hover{
 }
 
 .home-main-container .home-main-img-container img{
-    width: 600px;
+    width: 100%;
+    object-fit: contain;
+    max-width: 500px;
 }
 
 .home-main-container .home-main-text-container {
-    width: 500px;    
+    max-width: 500px;    
     padding: 25px;
     background-color: var(--blanco);
 }
