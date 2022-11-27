@@ -303,7 +303,6 @@ header .header-nav-container li a:hover{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(1, auto);
     justify-items: center;
     padding: 20px;
     gap: 20px;
@@ -350,24 +349,26 @@ header .header-nav-container li a:hover{
 /* -------------------------------------------- INICI CONTENT MAIN CONTACTO ---------------------------------------------*/
 
 .contact-main {
+    width: 100%;
     background-color: var(--silver);
     box-sizing: border-box;
     margin-top: 80px;
-    width: 100%;
     padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
 }
 
-.contact-main .contact-main-container-text {
-    max-width: 300px;    
+.contact-main .container_max_size {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    justify-items: center;
+}
+
+.contact-main .container_max_size .contact-main-container-text {
     padding: 25px;
     justify-self: end;
     background-color: var(--blanco);
 }
 
-.contact-main .contact-main-container-text h2{
+.contact-main .container_max_size .contact-main-container-text h2{
     margin-top: 25px;
     padding-left: 5px;
     letter-spacing: var(--space_letter);
@@ -375,7 +376,7 @@ header .header-nav-container li a:hover{
     font-size: var(--size_menu);
 }
 
-.contact-main .contact-main-container-text p{
+.contact-main .container_max_size .contact-main-container-text p{
     letter-spacing: var(--space_letter);
     margin-top: 50px;
     padding-left: 25px;
@@ -384,13 +385,14 @@ header .header-nav-container li a:hover{
     border-left: 7px solid var(--wheat);
 }
 
-.contact-main .contact-main-form-container {
-    padding: 25px;
-    margin-right: 100px;
+.contact-main .container_max_size .contact-main-form-container {
+    box-sizing: border-box;
+    padding: 35px;
+    width: 100%;
     background-color: var(--springgreen);
 }
 
-.contact-main .contact-main-form-container .form-inpunt--container {
+.contact-main .container_max_size .contact-main-form-container .form-inpunt--container {
     margin-top: 5px;
     width: 100%;
     letter-spacing: var(--space_letter);
@@ -398,7 +400,7 @@ header .header-nav-container li a:hover{
     font-size: var(--size_box_text--card);
 }
 
-.contact-main .contact-main-form-container .form-inpunt--container .text-input{
+.contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input{
     width: 100%;
     border-radius: 5px;
     padding: 5px;
@@ -408,12 +410,12 @@ header .header-nav-container li a:hover{
     color: var(--negro_text);
 }
 
-.contact-main .contact-main-form-container .comment {
+.contact-main .container_max_size .contact-main-form-container .comment {
     display: flex;
     flex-wrap: wrap;
 }
 
-.contact-main .contact-main-form-container .comment  textarea{
+.contact-main .container_max_size .contact-main-form-container .comment  textarea{
     margin-top: 30px;
     width: 100%;
     min-height: 20vh;
@@ -421,13 +423,13 @@ header .header-nav-container li a:hover{
     padding: 5px;
 }
 
-.contact-main .contact-main-form-container .form-inpunt--container.button {
+.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button {
     display: flex;
     justify-content: end;
     gap: 5px;
 }
 
-.contact-main .contact-main-form-container .form-inpunt--container.button input { 
+.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button input { 
     padding: 5px;
     width: 50%;
     min-width: 115px;
