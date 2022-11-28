@@ -571,28 +571,65 @@ header .header-nav-container li a:hover{
 }
 
 .blog-main .blog-main-blogpost {
-
-}
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items{
-
-}
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item{
-
-}
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item img{
-
-}
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item p{
-
-}
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item span{
     
 }
 
+.blog-main .blog-main-blogpost h3{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    letter-spacing: var(--space_letter);
+    color: var(--gris_titulo);
+    font-size: var(--size_menu);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--springgreen);
+    text-transform: uppercase;
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items .item{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border: 1px solid var(--gris_text);
+    border-top: 40px solid var(--springgreen);
+    border-radius: 10px;
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items .item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items .item p{
+    letter-spacing: var(--space_letter);
+    margin-top: 25px;
+    padding-left: 25px;
+    color: var(-gris_text);
+    font-size: var(--size_box_text--card);
+    border-left: 7px solid var(--wheat);
+    margin-bottom: 25px;
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items .item span{
+    text-transform: uppercase;
+    display: inline;
+    
+    padding: 8px;
+    border-radius: 15px 0 15px 0;
+    letter-spacing: var(--space_letter);
+    font-size: var(--size_menu--card);
+    background-color: var(--opacity_green);
+    color: var(-gris_text);
+}
+
+.blog-main .blog-main-blogpost .blog-main-blogpost-items .item span:hover {
+    background-color: var(--springgreen);
+}
 
 /* -------------------------------------------- FIN CONTENT MAIN BLOG ---------------------------------------------*/
