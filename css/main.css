@@ -27,6 +27,7 @@
     padding: 0;
 }
 
+
 /* SOMBRA GENERAL */
 .shadow_box {
     -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
@@ -101,7 +102,8 @@ header .header-nav-container {
 
 header .header-nav-container ul {
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--wheat);;
+    border-bottom: 1px solid var(--wheat);
+    padding-left: 0;  /* Reset Bootstrap style */
 }
 
 header .header-nav-container li {
