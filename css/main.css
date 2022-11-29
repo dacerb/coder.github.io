@@ -144,7 +144,6 @@ header .header-nav-container li a:hover{
 .footer-container .container_max_size .footer-nav-container {
     width: 300px;
     padding: 15px;
-
     border-bottom: 16px double var(--negro_text);
 }
 
@@ -244,7 +243,6 @@ header .header-nav-container li a:hover{
 .home-main-container .container_max_size .home-main-text-container {
     box-sizing: border-box;
     width: 100%;  
-    
     padding: 25px;
     background-color: var(--blanco);
 }
@@ -530,7 +528,6 @@ header .header-nav-container li a:hover{
 }
 
 .blog-main .blog-main-news-container .container_max_size h2 {
-    
     padding: 8px;
     border-radius: 15px 0 15px 0;
     letter-spacing: var(--space_letter);
@@ -547,7 +544,6 @@ header .header-nav-container li a:hover{
     gap: 10px;
     padding: 15px;
     overflow: hidden;
-
 }
 
 .blog-main .blog-main-news-container .blog-main-news-container-items img{
@@ -567,14 +563,6 @@ header .header-nav-container li a:hover{
 
 
 /* POST blogs */
-.blog-main {
-
-}
-
-.blog-main .blog-main-blogpost {
-    
-}
-
 .blog-main .blog-main-blogpost h3{
     margin-top: 80px;
     margin-bottom: 50px;
@@ -649,7 +637,6 @@ header .header-nav-container li a:hover{
 
     /* HEADER */
     header .header-icons-logo-container {
-
         width: 80%;
         display: grid;
         gap: 20px;
@@ -661,7 +648,6 @@ header .header-nav-container li a:hover{
         width: 100%;
         justify-items: center;
         padding-bottom: 0;
-        
         -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
         -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
         box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
@@ -675,7 +661,6 @@ header .header-nav-container li a:hover{
         line-height: 50px;
         height: 50px;
         background-color: var(--springgreen);  
-        
     }
 
     header .header-nav-container ul li:hover {
