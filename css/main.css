@@ -219,7 +219,7 @@ header .header-nav-container li a:hover{
 /* -------------------------------------------- FIN DEFINICIO Estilos generales de todas las paginas ---------------------------------------------------- */
 
 /* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
-.home-main-container {
+.home-main-container, .home-main-detail-text-container {
     background-color: var(--silver);
     box-sizing: border-box;
     margin: 80px auto auto auto;
@@ -259,9 +259,50 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 50px;
     padding-left: 15px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text);
     border-left: 7px solid var(--wheat);
+}
+
+/* Section text */
+
+.home-main-detail-text-container .container_max_size.text-container {
+    padding: 25px;
+    margin-top: 100px;
+    background-color: var(--blanco);
+}
+
+.home-main-detail-text-container .container_max_size.text-container h3 {
+    letter-spacing: var(--space_letter);
+    color: var(--gris_text);
+    font-size: var(--size_menu);
+    padding: 8px;
+    background-color: var(--opacity_green);
+    text-transform: uppercase;
+}
+
+.home-main-detail-text-container .container_max_size.text-container h3::before {
+    content: ">| ";
+    color: var(--negro_text);    
+}
+
+.home-main-detail-text-container .container_max_size.text-container p {
+    letter-spacing: var(--space_letter);
+    padding-left: 15px;
+    color: var(--gris_text);
+    font-size: var(--size_box_text);
+    border-left: 7px solid var(--wheat);
+}
+
+/* Carruose */
+.home-main-carousel-container {
+    margin-top: 80px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: var(--springgreen);
+    border-radius: 50%;
+    padding: 5px;
 }
 
 /* -------------------------------------------- FIN CONTENT MAIN HOME ---------------------------------------------*/
@@ -294,7 +335,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 50px;
     padding-left: 15px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text);
     border-left: 7px solid var(--wheat);
 }
@@ -331,7 +372,7 @@ header .header-nav-container li a:hover{
     margin-top: 25px;
     padding-left: 5px;
     letter-spacing: var(--space_letter);
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_menu--card);
 }
 
@@ -339,7 +380,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 25px;
     padding-left: 25px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text--card);
     border-left: 7px solid var(--wheat);
 }
@@ -381,7 +422,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 50px;
     padding-left: 25px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text);
     border-left: 7px solid var(--wheat);
 }
@@ -397,7 +438,7 @@ header .header-nav-container li a:hover{
     margin-top: 5px;
     width: 100%;
     letter-spacing: var(--space_letter);
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text--card);
 }
 
@@ -490,7 +531,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     font-size: var(--size_menu--card);
     background-color: var(--opacity_green);
-    color: var(-gris_text);
+    color: var(--gris_text);
     
 }
 
@@ -498,7 +539,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 25px;
     padding-left: 25px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text--card);
     border-left: 7px solid var(--wheat);
 }
@@ -601,7 +642,7 @@ header .header-nav-container li a:hover{
     letter-spacing: var(--space_letter);
     margin-top: 25px;
     padding-left: 25px;
-    color: var(-gris_text);
+    color: var(--gris_text);
     font-size: var(--size_box_text--card);
     border-left: 7px solid var(--wheat);
     margin-bottom: 25px;
@@ -752,3 +793,26 @@ header .header-nav-container li a:hover{
 }
 
 /* -------------------------------------------- FIN MEDIA QUERIES -------------------------------------------- */
+
+
+
+/* INICIO MAPS */
+
+.footer-map-container {
+    width: 100%;
+    
+    
+}
+
+.footer-map-container iframe {
+    height: 50vh;
+}
+
+.footer-map-container iframe.map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* FIN MAPS */
