@@ -20,7 +20,7 @@
 IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
 ---
 
-[**Consigna**](./doc/preEntrega1/coder-preentrega.pdf)
+[**Consigna**](./doc/preEntrega2/coder-preentrega.pdf)
 
 [**PDF W**ireFame](./doc/preEntrega1/WireFramePreEntrega1.pdf)
 
