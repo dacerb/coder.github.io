@@ -19,6 +19,7 @@
     --space_letter_copyright: 10px;
     --opacity_green: hsla(120, 100%, 50%, 0.3);
     --amarillo:#FFFF00;
+    --gradient-color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 * {   /* Reseteamos el body quitando los estilos por defecto, y agregamos fixed para que solo podamos usar la pantalla estatica sin scroll*/
@@ -220,7 +221,7 @@ header .header-nav-container li a:hover{
 
 /* -------------------------------------------- INICIO CONTENT MAIN HOME ---------------------------------------------*/
 .home-main-container, .home-main-detail-text-container {
-    background-color: var(--silver);
+    background-image: var(--gradient-color);
     box-sizing: border-box;
     margin: 80px auto auto auto;
     width: 100%;
@@ -310,7 +311,7 @@ header .header-nav-container li a:hover{
 /* -------------------------------------------- INICIO CONTENT MAIN QUENES SOMOS ---------------------------------------------*/
 
 .about-us-detail-container   {
-    background-color: var(--silver);
+    background-image: var(--gradient-color);
     margin-top: 80px;
     width: 100%;
     padding: 25px;
@@ -392,7 +393,7 @@ header .header-nav-container li a:hover{
 
 .contact-main {
     width: 100%;
-    background-color: var(--silver);
+    background-image: var(--gradient-color);
     box-sizing: border-box;
     margin-top: 80px;
     padding: 25px;
@@ -554,15 +555,14 @@ header .header-nav-container li a:hover{
 
 .blog-main {
     margin-top: 80px;
-    padding: 25px;
     box-sizing: border-box;
-    
 }
 
 
 .blog-main .blog-main-news-container {
     padding: 50px;
     background-color: var(--silver);
+    background-image: var(--gradient-color);
 }
 
 .blog-main .blog-main-news-container .container_max_size {
