@@ -773,6 +773,7 @@ header .header-nav-container li a:hover{
 
     /* FOOTER */
     .footer-container .container_max_size {
+        box-sizing: border-box;
         width: 100%;
     }
 
@@ -797,9 +798,12 @@ header .header-nav-container li a:hover{
     }
 
     /* HOME, BLOG, CONTACT, GALERIA, ABOUT US */
-    .home-main-container, .contact-main, .blog-main, .galery-main, .about-us-detail-container, .about-team-container {
+    .home-main-container, .contact-main, .blog-main, .galery-main, .about-us-detail-container, .about-team-container, .home-main-detail-text-container {
         padding: 5px;
     }
+
+    /* Home */
+    .footer-container .container_max_size .footer-text-container 
 
 }
 
