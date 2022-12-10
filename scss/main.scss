@@ -1,0 +1,17 @@
+// Import de Variables y Mixin.
+@import "./utils/variables";
+@import "./utils/mixin";
+
+// Import de Base
+@import "./base/base";
+
+// Import de Components
+@import "./components/botones";
+
+
+// Import de estilos personalizados de las views
+@import "./pages/home";
+@import "./pages/quienes_somos";
+@import "./pages/contacto";
+@import "./pages/galleria";
+@import "./pages/blog";
