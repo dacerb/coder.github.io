@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <section class="header-icons-logo-container">
+        <section class="header-icons-logo-container container_max_size">
             <div class="logo-contanier">
                 <a href="../index.html"><img src="../assets/logos/140-1409984_python-logo-bash-shell-logo-shell-script-logo.png" alt="Logo Dev Code"></a>
                 <h1>Dcode</h1>
@@ -34,66 +34,74 @@
             </ul>
         </nav>
     </header>
-
-        <!-- MAIN DE QUIENES SOMOS --->
+    <!-- MAIN DE QUIENES SOMOS --->
     <main>
-        <section>
-
-        </section>
-        <section>
-            <div>
-                <h2>Contacto:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, esse!</p>
-            </div>
-            <div>
-                <form action="#" method="GET">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" placeholder="your name">
-    
-                    <label for="lastname">Apellido:</label>
-                    <input type="text" id="lastname" placeholder="your lastname">
-    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="your email">
-    
-                    <label for="yes">Recibir notificaciones:</label>       
-                    <input type="radio" id="yes" name="notifiacion" value="si">
-                    
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="notifiacion" value="no">
-                    
-                    <label for="textarea">Dejanos tu comentario:</label>
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-    
-                    <input type="submit" value="Submit">
-                    <input type="reset">
-                </form>
+        <section class="contact-main shadow_box">
+            <div class="container_max_size">
+                <div class="contact-main-container-text">
+                    <h2>>| Contacto</h2>
+                    <p class="contact-main-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, esse!</p>
+                </div>
+                <div class="contact-main-form-container">
+                    <form action="#" method="GET">
+                        <div class="form-inpunt--container">
+                            <label for="name">Nombre:</label>
+                            <input class="text-input" type="text" id="name" placeholder="your name">
+                        </div>
+        
+                        <div class="form-inpunt--container">
+                            <label for="lastname">Apellido:</label>
+                            <input class="text-input" type="text" id="lastname" placeholder="your lastname">
+                        </div>
+        
+                        <div class="form-inpunt--container">
+                            <label for="email">Email:</label>
+                            <input class="text-input" type="email" id="email" placeholder="your email">
+                        </div>
+        
+                        <div class="form-inpunt--container notifications">
+                            <label for="yes">Recibir notificaciones:</label>       
+                            <input type="radio" id="yes" name="notifiacion" value="si">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="notifiacion" value="no">
+                        </div>
+                        
+                        <div class="form-inpunt--container comment">
+                            <label for="textarea">Dejanos tu comentario:</label>
+                            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                        </div>
+        
+                        <div class="form-inpunt--container button">
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <section class="footer-container">
-            <nav class="footer-nav-container">
-                <h4>/> Nav</h4>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./quienes_somos.html">Quienes Somos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-            </nav>
-            <div class="footer-text-container">
-                <p>Copyright 2022</p>
-                <a href="https://github.com/dacerb/full-stack-coderhouse/tree/PreEntrega1Acerbo" target="_blank"><img src="../assets/logos/github.png" alt="Logo de Github"></a>
+            <div class="container_max_size"> 
+                <nav class="footer-nav-container">
+                    <h4>/> Nav</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./quienes_somos.html">Quienes Somos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-text-container">
+                    <p>Copyright 2022</p>
+                    <a href="https://github.com/dacerb/full-stack-coderhouse/tree/PreEntrega2Acerbo" target="_blank"><img src="../assets/logos/github.png" alt="Logo de Github"></a>
+                </div>
             </div>
         </section>
-        <section>
-            <div class="footer-map-container">
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6209.242755903148!2d-77.04363602434464!3d38.90977276948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394992895496" width="100%" height="600" frameborder="0"></iframe>
-            </div>
-        </section>
+        <div class="footer-map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6209.242755903148!2d-77.04363602434464!3d38.90977276948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394992895496"  frameborder="0"></iframe>
+        </div>
     </footer>
 </body>
 </html>
