@@ -31,9 +31,24 @@ IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
 
 
 ---
+# Instalacion
+>
 
+>Instalamos node-sass y nodemon en modo -D develop.
+````
+$ npm install -D node-sass nodemon
+````
 
-# Commands
+> Al package.json agreamos la definicion del script que se 
+inicia con watch.css que inicia al build-csss
+````
+"scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+````
+
+# Ejecucion del builder de SCSS
 > Iniciar watch para compilar scss -> css
  
 ````
