@@ -27,3 +27,15 @@ IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
 [**Figma**](https://www.figma.com/file/eTDgxn02dVJJvCabktpbwO/WireFrame-Prototipo?node-id=50%3A7)
 
 ![Alt text](./doc/preEntrega1/Group%2039.svg)
+
+
+
+---
+
+
+# Commands
+> Iniciar watch para compilar scss -> css
+ 
+````
+npm run watch-css
+````
