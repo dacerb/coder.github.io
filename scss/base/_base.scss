@@ -4,6 +4,14 @@
     font-family: $frist-font;
 }
 
+p, a {
+    font-family: $secondary-font;
+}
+
+h1, h2, h3, h4{
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
 .shadow_box {
     -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
