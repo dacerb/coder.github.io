@@ -1,0 +1,79 @@
+/* HEADER ICONS AND LOGO, Estilos Generales del SITIO*/
+header .header-icons-logo-container {
+    margin-top: 30px;
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 100px;
+    
+}
+
+header .header-icons-logo-container .logo-contanier {
+
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+header .header-icons-logo-container .logo-contanier h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 400px;
+    letter-spacing: $space-letter;
+    color: $color-accent-one;
+}
+
+header .header-icons-logo-container .logo-contanier  img {
+    width: 80px;
+}
+
+header .header-icons-logo-container .icons-container {
+
+    width: 300px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .header-icons-logo-container .icons-container img {
+    width: 30px;
+}
+/* HEADER ICONS AND LOGO, Estilos Generales del SITIO*/
+
+/* HEADER NAV Estilos Generales del SITIO */
+header .header-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+header .header-nav-container ul {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-accent-one;
+    padding-left: 0;  /* Reset Bootstrap style */
+}
+
+header .header-nav-container li {
+    margin-top: 25px;
+    display: inline-block;
+}
+
+header .header-nav-container li a{
+    letter-spacing: $space-letter;
+    font-weight: 200;
+    padding: 15px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: $color-tile;
+}
+
+header .header-nav-container li a:hover{
+    font-weight: 800;
+    color: $color-text-two;
+}
