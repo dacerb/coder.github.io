@@ -1,3 +1,5 @@
+
+// POSIBLE MIXIN
 .home-main-container, .home-main-detail-text-container {
     background-image: $gradient-color-one;
     box-sizing: border-box;
@@ -10,76 +12,85 @@
 .home-main-container .container_max_size {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(450px, 1fr));
+
+    .home-main-img-container {
+        justify-self: flex-end;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .home-main-text-container {
+        box-sizing: border-box;
+        width: 100%;  
+        padding: 25px;
+        background-color: $tertiary-color;
+
+        h3 {
+            letter-spacing: $space-letter;
+            color: $color-tile;
+            font-size: $size-menu;
+        }
+        p {
+            letter-spacing: $space-letter;
+            margin-top: 50px;
+            padding-left: 15px;
+            color: $color-text-one;
+            font-size: $size-box-text;
+            border-left: 7px solid $color-accent-one;
+        }
+    }
+    
 }
 
-.home-main-container .container_max_size .home-main-img-container {
-    justify-self: flex-end;
-}
-
-.home-main-container .container_max_size .home-main-img-container img{
-    width: 100%;
-    object-fit: cover;
-}
-
-.home-main-container .container_max_size .home-main-text-container {
-    box-sizing: border-box;
-    width: 100%;  
-    padding: 25px;
-    background-color: $tertiary-color;
-}
-
-.home-main-container .container_max_size .home-main-text-container h3 {
-    letter-spacing: $space-letter;
-    color: $color-tile;
-    font-size: $size-menu;
-}
-
-.home-main-container .container_max_size .home-main-text-container p {
-    letter-spacing: $space-letter;
-    margin-top: 50px;
-    padding-left: 15px;
-    color: $color-text-one;
-    font-size: $size-box-text;
-    border-left: 7px solid $color-accent-one;
-}
-
-/* Section text */
-
+/* SECCION DE TEXTO  */
 .home-main-detail-text-container .container_max_size.text-container {
     padding: 25px;
     margin-top: 100px;
     background-color: $tertiary-color;
+
+    h3 {
+        letter-spacing: $space-letter;
+        color: $color-tile;
+        font-size: $size-menu;
+        padding: 8px;
+        background-color: $color-accent-two;
+        text-transform: uppercase;
+    }
+    h3::before {
+        content: ">| ";
+        // color: $color-text-two;    
+    }
+    p {
+        letter-spacing: $space-letter;
+        color: $color-text-one;
+        padding-left: 15px;
+        font-size: $size-box-text;
+        border-left: 7px solid $color-accent-one;
+    }
+    
 }
 
-.home-main-detail-text-container .container_max_size.text-container h3 {
-    letter-spacing: $space-letter;
-    color: $color-tile;
-    font-size: $size-menu;
-    padding: 8px;
-    background-color: $color-accent-two;
-    text-transform: uppercase;
-}
 
-.home-main-detail-text-container .container_max_size.text-container h3::before {
-    content: ">| ";
-    // color: $color-text-two;    
-}
+//.home-main-container .container_max_size 
+//.home-main-container .container_max_size .home-main-img-container 
+//.home-main-container .container_max_size 
+//.home-main-container .container_max_size .home-main-text-container 
+//.home-main-container .container_max_size .home-main-text-container 
 
-.home-main-detail-text-container .container_max_size.text-container p {
-    letter-spacing: $space-letter;
-    color: $color-text-one;
-    padding-left: 15px;
-    font-size: $size-box-text;
-    border-left: 7px solid $color-accent-one;
-}
+
+///.home-main-detail-text-container .container_max_size.text-container 
+///.home-main-detail-text-container .container_max_size.text-container 
+///.home-main-detail-text-container .container_max_size.text-container 
 
 /* Carruose */
 .home-main-carousel-container {
     margin-top: 80px;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    background-color: $first-color;
-    border-radius: 50%;
-    padding: 5px;
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: $first-color;
+        border-radius: 50%;
+        padding: 5px;
+    }
 }

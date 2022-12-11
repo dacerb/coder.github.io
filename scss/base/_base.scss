@@ -1,9 +1,11 @@
+// RESETEO BASE
 * {   /* Reseteamos el body quitando los estilos por defecto, y agregamos fixed para que solo podamos usar la pantalla estatica sin scroll*/
     margin: 0;
     padding: 0;
     font-family: $frist-font;
 }
 
+// CONFIGURACION DE TIPOGRAFIAS
 p, a {
     font-family: $secondary-font;
 }
@@ -13,6 +15,7 @@ h1, h2, h3, h4{
     text-transform: uppercase;
 }
 
+// CONFIGURACION DE SOBRAS
 .shadow_box {
     -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
     -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
