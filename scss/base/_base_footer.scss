@@ -81,10 +81,10 @@
 
 /* INICIO MAPS */
 .footer-map-container {
-    width: 100%;
     iframe {
         height: 50vh;
     }.map {
+        width: 100%;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -ms-filter: grayscale(100%);

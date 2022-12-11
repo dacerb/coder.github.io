@@ -4,89 +4,89 @@
     box-sizing: border-box;
     margin-top: 80px;
     padding: 25px;
+
+    .container_max_size {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+        justify-items: center;
+        .contact-main-container-text {
+            padding: 25px;
+            justify-self: end;
+            background-color: $tertiary-color;
+
+            h2{
+                margin-top: 25px;
+                padding-left: 5px;
+                letter-spacing: $space-letter;
+                color: $color-tile;
+                font-size: $size-menu;
+            }
+
+            p{
+                letter-spacing: $space-letter;
+                margin-top: 50px;
+                padding-left: 25px;
+                color: $color-text-one;
+                font-size: $size-box-text;
+                border-left: 7px solid $color-accent-one;
+            }
+        }
+        .contact-main-form-container {
+            box-sizing: border-box;
+            padding: 35px;
+            width: 100%;
+            background-color: $first-color;
+
+            .form-inpunt--container {
+                margin-top: 5px;
+                width: 100%;
+                letter-spacing: $space-letter;
+                color: $color-text-one;
+                font-size: $size-box-text--card;
+
+                .text-input{
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 5px;
+                    letter-spacing: $space-letter;
+                    font-size: $size-box-text--card;
+                    font-weight: 900;
+                    color: color-text-two;
+                }
+            }
+
+            .comment {
+                display: flex;
+                flex-wrap: wrap;
+
+                textarea{
+                    margin-top: 30px;
+                    width: 100%;
+                    min-height: 20vh;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+            }
+
+            .form-inpunt--container.button {
+                display: flex;
+                justify-content: end;
+                gap: 5px;
+
+                input { 
+                    padding: 5px;
+                    width: 50%;
+                    min-width: 115px;
+                }
+                
+            }
+
+        }
+    }
 }
 
-.contact-main .container_max_size {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
-    justify-items: center;
-}
 
-.contact-main .container_max_size .contact-main-container-text {
-    padding: 25px;
-    justify-self: end;
-    background-color: $tertiary-color;
-}
-
-.contact-main .container_max_size .contact-main-container-text h2{
-    margin-top: 25px;
-    padding-left: 5px;
-    letter-spacing: $space-letter;
-    color: $color-tile;
-    font-size: $size-menu;
-}
-
-.contact-main .container_max_size .contact-main-container-text p{
-    letter-spacing: $space-letter;
-    margin-top: 50px;
-    padding-left: 25px;
-    color: $color-text-one;
-    font-size: $size-box-text;
-    border-left: 7px solid $color-accent-one;
-}
-
-.contact-main .container_max_size .contact-main-form-container {
-    box-sizing: border-box;
-    padding: 35px;
-    width: 100%;
-    background-color: $first-color;
-}
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container {
-    margin-top: 5px;
-    width: 100%;
-    letter-spacing: $space-letter;
-    color: $color-text-one;
-    font-size: $size-box-text--card;
-}
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input{
-    width: 100%;
-    border-radius: 5px;
-    padding: 5px;
-    letter-spacing: $space-letter;
-    font-size: $size-box-text--card;
-    font-weight: 900;
-    color: color-text-two;
-}
-
-.contact-main .container_max_size .contact-main-form-container .comment {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-main .container_max_size .contact-main-form-container .comment  textarea{
-    margin-top: 30px;
-    width: 100%;
-    min-height: 20vh;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button {
-    display: flex;
-    justify-content: end;
-    gap: 5px;
-}
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button input { 
-    padding: 5px;
-    width: 50%;
-    min-width: 115px;
-
-}
-
-
+// VER MIXIN
 .contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input:focus, .contact-main .container_max_size .contact-main-form-container .comment  textarea:focus {
     transition: 0.6s;
     background-color: $color-accent-tree;

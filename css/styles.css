@@ -141,16 +141,16 @@ header .header-nav-container {
         width: 60px; }
 
 /* INICIO MAPS */
-.footer-map-container {
-  width: 100%; }
-  .footer-map-container iframe {
-    height: 50vh; }
-  .footer-map-container .map {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
+.footer-map-container iframe {
+  height: 50vh; }
+
+.footer-map-container .map {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 /* FIN MAPS */
 .home-main-container, .home-main-detail-text-container {
@@ -279,74 +279,63 @@ header .header-nav-container {
   box-sizing: border-box;
   margin-top: 80px;
   padding: 25px; }
-
-.contact-main .container_max_size {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
-  justify-items: center; }
-
-.contact-main .container_max_size .contact-main-container-text {
-  padding: 25px;
-  justify-self: end;
-  background-color: whitesmoke; }
-
-.contact-main .container_max_size .contact-main-container-text h2 {
-  margin-top: 25px;
-  padding-left: 5px;
-  letter-spacing: 2px;
-  color: #424949;
-  font-size: 1.8rem; }
-
-.contact-main .container_max_size .contact-main-container-text p {
-  letter-spacing: 2px;
-  margin-top: 50px;
-  padding-left: 25px;
-  color: InactiveCaptionText;
-  font-size: 1.1rem;
-  border-left: 7px solid #F5DEB3; }
-
-.contact-main .container_max_size .contact-main-form-container {
-  box-sizing: border-box;
-  padding: 35px;
-  width: 100%;
-  background-color: #00FF7F; }
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container {
-  margin-top: 5px;
-  width: 100%;
-  letter-spacing: 2px;
-  color: InactiveCaptionText;
-  font-size: 1rem; }
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input {
-  width: 100%;
-  border-radius: 5px;
-  padding: 5px;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  font-weight: 900;
-  color: color-text-two; }
-
-.contact-main .container_max_size .contact-main-form-container .comment {
-  display: flex;
-  flex-wrap: wrap; }
-
-.contact-main .container_max_size .contact-main-form-container .comment textarea {
-  margin-top: 30px;
-  width: 100%;
-  min-height: 20vh;
-  border-radius: 5px;
-  padding: 5px; }
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button {
-  display: flex;
-  justify-content: end;
-  gap: 5px; }
-
-.contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button input {
-  padding: 5px;
-  width: 50%;
-  min-width: 115px; }
+  .contact-main .container_max_size {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    justify-items: center; }
+    .contact-main .container_max_size .contact-main-container-text {
+      padding: 25px;
+      justify-self: end;
+      background-color: whitesmoke; }
+      .contact-main .container_max_size .contact-main-container-text h2 {
+        margin-top: 25px;
+        padding-left: 5px;
+        letter-spacing: 2px;
+        color: #424949;
+        font-size: 1.8rem; }
+      .contact-main .container_max_size .contact-main-container-text p {
+        letter-spacing: 2px;
+        margin-top: 50px;
+        padding-left: 25px;
+        color: InactiveCaptionText;
+        font-size: 1.1rem;
+        border-left: 7px solid #F5DEB3; }
+    .contact-main .container_max_size .contact-main-form-container {
+      box-sizing: border-box;
+      padding: 35px;
+      width: 100%;
+      background-color: #00FF7F; }
+      .contact-main .container_max_size .contact-main-form-container .form-inpunt--container {
+        margin-top: 5px;
+        width: 100%;
+        letter-spacing: 2px;
+        color: InactiveCaptionText;
+        font-size: 1rem; }
+        .contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input {
+          width: 100%;
+          border-radius: 5px;
+          padding: 5px;
+          letter-spacing: 2px;
+          font-size: 1rem;
+          font-weight: 900;
+          color: color-text-two; }
+      .contact-main .container_max_size .contact-main-form-container .comment {
+        display: flex;
+        flex-wrap: wrap; }
+        .contact-main .container_max_size .contact-main-form-container .comment textarea {
+          margin-top: 30px;
+          width: 100%;
+          min-height: 20vh;
+          border-radius: 5px;
+          padding: 5px; }
+      .contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button {
+        display: flex;
+        justify-content: end;
+        gap: 5px; }
+        .contact-main .container_max_size .contact-main-form-container .form-inpunt--container.button input {
+          padding: 5px;
+          width: 50%;
+          min-width: 115px; }
 
 .contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input:focus, .contact-main .container_max_size .contact-main-form-container .comment textarea:focus {
   transition: 0.6s;
@@ -355,59 +344,52 @@ header .header-nav-container {
 .galery-main {
   margin-top: 80px;
   padding: 20px; }
-
-.galery-main .galery-main-container h2 {
-  margin-top: 80px;
-  margin-bottom: 50px;
-  padding-left: 30px;
-  letter-spacing: 2px;
-  color: #424949;
-  font-size: 1.8rem;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #00FF7F;
-  text-transform: uppercase; }
-
-.galery-main .galery-main-container-items {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
-  overflow: hidden; }
-
-.galery-main .galery-main-container-items .item {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px 10px;
-  border: 1px solid InactiveCaptionText;
-  border-top: 40px solid #00FF7F;
-  border-radius: 10px; }
-
-.galery-main .galery-main-container-items img, video, iframe {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 25px; }
-
-.galery-main .galery-main-container-items h4 {
-  display: inline;
-  padding: 8px;
-  border-radius: 15px 0 15px 0;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  background-color: rgba(0, 255, 0, 0.3);
-  color: InactiveCaptionText; }
-
-.galery-main .galery-main-container-items p {
-  letter-spacing: 2px;
-  margin-top: 25px;
-  padding-left: 25px;
-  color: InactiveCaptionText;
-  font-size: 1rem;
-  border-left: 7px solid #F5DEB3; }
-
-.galery-main .galery-main-container-items h4:hover {
-  background-color: #00FF7F;
-  transition: 0.5s; }
+  .galery-main .galery-main-container h2 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    color: #424949;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #00FF7F;
+    text-transform: uppercase; }
+  .galery-main .galery-main-container-items {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    overflow: hidden; }
+    .galery-main .galery-main-container-items .item {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px 10px;
+      border: 1px solid InactiveCaptionText;
+      border-top: 40px solid #00FF7F;
+      border-radius: 10px; }
+    .galery-main .galery-main-container-items img, .galery-main .galery-main-container-items video, .galery-main .galery-main-container-items iframe {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 25px; }
+    .galery-main .galery-main-container-items h4 {
+      display: inline;
+      padding: 8px;
+      border-radius: 15px 0 15px 0;
+      letter-spacing: 2px;
+      font-size: 1.4rem;
+      background-color: rgba(0, 255, 0, 0.3);
+      color: InactiveCaptionText; }
+    .galery-main .galery-main-container-items h4:hover {
+      background-color: #00FF7F;
+      transition: 0.5s; }
+    .galery-main .galery-main-container-items p {
+      letter-spacing: 2px;
+      margin-top: 25px;
+      padding-left: 25px;
+      color: InactiveCaptionText;
+      font-size: 1rem;
+      border-left: 7px solid #F5DEB3; }
 
 .blog-main {
   margin-top: 80px;
