@@ -1,0 +1,75 @@
+.about-us-detail-container   {
+    background-image: $gradient-color-one;
+    margin-top: 80px;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.about-us-detail-container .text-container {
+    width: 80%;    
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: $tertiary-color;
+}
+
+.about-us-detail-container .text-container h2 {
+    letter-spacing: $space-letter;
+    color: $color-text-one;
+    font-size: $size-menu;
+}
+
+.about-us-detail-container .text-container .body-text{
+    letter-spacing: $space-letter;
+    margin-top: 50px;
+    padding-left: 15px;
+    color: $color-text-one;
+    font-size: $size-box-text;
+    border-left: 7px solid $color-accent-one;
+}
+
+.about-team-container {
+    margin: 100px auto auto auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-team-container .team-member-container {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid $color-text-one;
+    border-top: 40px solid $first-color;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.about-team-container .team-member-container img{
+    width: 100px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.about-team-container .team-member-container h4{
+    margin-top: 25px;
+    padding-left: 5px;
+    letter-spacing: $space-letter;
+    color: $color-text-one;
+    font-size: $size-menu--card;
+}
+
+.about-team-container .team-member-container p{
+    letter-spacing: $space-letter;
+    margin-top: 25px;
+    padding-left: 25px;
+    color: $color-text-one;
+    font-size: $size-box-text--card;
+    border-left: 7px solid $color-accent-one;
+}
