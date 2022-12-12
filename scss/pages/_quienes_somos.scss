@@ -1,5 +1,4 @@
 
-
 // CAJA de descripcion principal 
 .about-us-detail-container   {
     background-image: $gradient-color-one;
@@ -84,7 +83,6 @@
             border-left: 7px solid $color-accent-one;
         }
     }
-
 
     @include mobile-cg(){
         box-sizing: border-box;

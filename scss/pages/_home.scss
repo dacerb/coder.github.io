@@ -10,13 +10,11 @@
     @include mobile-cg() {
         padding: 10px;
     }
-    
 }
 
 .home-main-container .container_max_size {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(450px, 1fr));
-
     .home-main-img-container {
         justify-self: flex-end;
         img{
@@ -24,7 +22,6 @@
             object-fit: cover;
         }
     }
-
     .home-main-text-container {
         box-sizing: border-box;
         width: 100%;  
@@ -45,11 +42,9 @@
             border-left: 7px solid $color-accent-one;
         }
     }
-
     @include mobile-cg() {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
     }
-    
 }
 
 /* SECCION DE TEXTO  */

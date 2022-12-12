@@ -2,7 +2,6 @@
 .galery-main {
     margin-top: 80px;
     padding:20px;
-
     .galery-main-container h2 {
         margin-top: 80px;
         margin-bottom: 50px;
@@ -14,7 +13,6 @@
         border-bottom: 4px solid $first-color;
         text-transform: uppercase;
     }
-
     .galery-main-container-items {
 
         display: grid;
@@ -65,28 +63,10 @@
             width: 100%;
         }
     }
-
     @include mobile-tm(){
         margin-top: -20px;
-        
     }
-
     @include mobile-cg() {
         padding: 10px;
     }
-
 }
-
-//.galery-main 
-//
-//.galery-main 
-//
-//.galery-main .galery-main-container-items 
-//
-//.galery-main .galery-main-container-items 
-//
-//.galery-main .galery-main-container-items 
-//
-//.galery-main .galery-main-container-items 
-//
-//.galery-main .galery-main-container-items 

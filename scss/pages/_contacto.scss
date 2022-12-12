@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin-top: 80px;
     padding: 25px;
-
     .container_max_size {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
@@ -82,19 +81,16 @@
             }
 
         }
-
         @include mobile-cm() {
             grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
             padding: 0;
         }
     }
-
     @include mobile-cm() {
         padding: 10px;
         padding: 0;
     }
 }
-
 
 // VER MIXIN
 .contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input:focus, .contact-main .container_max_size .contact-main-form-container .comment  textarea:focus {
