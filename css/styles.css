@@ -391,105 +391,92 @@ header .header-nav-container {
       font-size: 1rem;
       border-left: 7px solid #F5DEB3; }
 
+/* BLOG CONTENT */
 .blog-main {
   margin-top: 80px;
-  box-sizing: border-box; }
-
-.blog-main .blog-main-news-container {
-  padding: 50px;
-  background-color: #C0C0C0;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
-
-.blog-main .blog-main-news-container .container_max_size {
-  background-color: whitesmoke;
-  padding: 25px; }
-
-.blog-main .blog-main-news-container .container_max_size h2 {
-  padding: 8px;
-  border-radius: 15px 0 15px 0;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  background-color: rgba(0, 255, 0, 0.3);
-  color: #424949; }
-
-.blog-main .blog-main-news-container .blog-main-news-container-items {
-  display: grid;
-  margin-top: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-flow: row;
-  gap: 10px;
-  padding: 15px;
-  overflow: hidden; }
-
-.blog-main .blog-main-news-container .blog-main-news-container-items img {
-  margin-top: 15px;
-  width: 100%;
-  object-fit: cover; }
-
-.blog-main .blog-main-news-container .blog-main-news-container-items p {
-  letter-spacing: 2px;
-  margin-top: 15px;
-  padding-left: 15px;
-  color: InactiveCaptionText;
-  font-size: 1.1rem;
-  border-left: 7px solid #F5DEB3; }
-
-/* POST blogs */
-.blog-main .blog-main-blogpost h3 {
-  margin-top: 80px;
-  margin-bottom: 50px;
-  padding-left: 30px;
-  letter-spacing: 2px;
-  color: #424949;
-  font-size: 1.8rem;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #00FF7F;
-  text-transform: uppercase; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 20px; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item {
-  width: 100%;
   box-sizing: border-box;
-  padding: 20px 10px;
-  border: 1px solid InactiveCaptionText;
-  border-top: 40px solid #00FF7F;
-  border-radius: 10px; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item img {
-  width: 100%;
-  object-fit: cover; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item p {
-  letter-spacing: 2px;
-  margin-top: 25px;
-  padding-left: 25px;
-  color: InactiveCaptionText;
-  font-size: 1rem;
-  border-left: 7px solid #F5DEB3;
-  margin-bottom: 25px; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item span {
-  text-transform: uppercase;
-  display: inline;
-  padding: 8px;
-  border-radius: 15px 0 15px 0;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  background-color: rgba(0, 255, 0, 0.3);
-  color: InactiveCaptionText; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item span:hover {
-  background-color: #00FF7F;
-  transition: 0.5s; }
-
-.blog-main .blog-main-blogpost .blog-main-blogpost-items .item:hover {
-  border: 1px dotted InactiveCaptionText;
-  border-top: 40px solid #00FF7F;
-  transition: 0.7s;
-  -webkit-box-shadow: 0px 7px 66px -10px #857e85;
-  -moz-box-shadow: 0px 7px 66px -10px #857e85;
-  box-shadow: 0px 7px 66px -10px #857e85; }
+  /* POST blogs */ }
+  .blog-main .blog-main-news-container {
+    padding: 50px;
+    background-color: #C0C0C0;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
+    .blog-main .blog-main-news-container .container_max_size {
+      background-color: whitesmoke;
+      padding: 25px; }
+      .blog-main .blog-main-news-container .container_max_size h2 {
+        padding: 8px;
+        border-radius: 15px 0 15px 0;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        background-color: rgba(0, 255, 0, 0.3);
+        color: #424949; }
+    .blog-main .blog-main-news-container .blog-main-news-container-items {
+      display: grid;
+      margin-top: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-flow: row;
+      gap: 10px;
+      padding: 15px;
+      overflow: hidden; }
+      .blog-main .blog-main-news-container .blog-main-news-container-items img {
+        margin-top: 15px;
+        width: 100%;
+        object-fit: cover; }
+      .blog-main .blog-main-news-container .blog-main-news-container-items p {
+        letter-spacing: 2px;
+        margin-top: 15px;
+        padding-left: 15px;
+        color: InactiveCaptionText;
+        font-size: 1.1rem;
+        border-left: 7px solid #F5DEB3; }
+  .blog-main .blog-main-blogpost h3 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    color: #424949;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #00FF7F;
+    text-transform: uppercase; }
+  .blog-main .blog-main-blogpost .blog-main-blogpost-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px; }
+    .blog-main .blog-main-blogpost .blog-main-blogpost-items .item {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px 10px;
+      border: 1px solid InactiveCaptionText;
+      border-top: 40px solid #00FF7F;
+      border-radius: 10px; }
+      .blog-main .blog-main-blogpost .blog-main-blogpost-items .item img {
+        width: 100%;
+        object-fit: cover; }
+      .blog-main .blog-main-blogpost .blog-main-blogpost-items .item p {
+        letter-spacing: 2px;
+        margin-top: 25px;
+        padding-left: 25px;
+        color: InactiveCaptionText;
+        font-size: 1rem;
+        border-left: 7px solid #F5DEB3;
+        margin-bottom: 25px; }
+      .blog-main .blog-main-blogpost .blog-main-blogpost-items .item span {
+        text-transform: uppercase;
+        display: inline;
+        padding: 8px;
+        border-radius: 15px 0 15px 0;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        background-color: rgba(0, 255, 0, 0.3);
+        color: InactiveCaptionText; }
+      .blog-main .blog-main-blogpost .blog-main-blogpost-items .item span:hover {
+        background-color: #00FF7F;
+        transition: 0.5s; }
+    .blog-main .blog-main-blogpost .blog-main-blogpost-items .item:hover {
+      border: 1px dotted InactiveCaptionText;
+      border-top: 40px solid #00FF7F;
+      transition: 0.7s;
+      -webkit-box-shadow: 0px 7px 66px -10px #857e85;
+      -moz-box-shadow: 0px 7px 66px -10px #857e85;
+      box-shadow: 0px 7px 66px -10px #857e85; }
