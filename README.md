@@ -31,7 +31,7 @@ IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
 
 
 ---
-# Instalacion
+# Instalación
 >
 
 >Instalamos node-sass y nodemon en modo -D develop.
