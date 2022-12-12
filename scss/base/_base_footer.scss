@@ -40,6 +40,10 @@
                 font-weight: 900;
                 color: $color-text-two;
             }
+            @include mobile-cm() {
+                width: 100px;
+                padding: 0;
+            }
         }
 
         .footer-text-container {
@@ -74,6 +78,27 @@
                 width: 60px;
             }
         }
+
+
+        @include mobile-tg() {
+            width: 60%;
+            height: auto;
+            justify-items: center;
+        }
+
+        @include mobile-tm() {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+        }
+        @include mobile-cg() {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        @include mobile-cg() {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
 
 
     }

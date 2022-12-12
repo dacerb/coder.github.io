@@ -108,6 +108,21 @@
                 -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
                 box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
             }
+
+            @include mobile-cg() {
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+                
+            }
         }
+    }
+
+    @include mobile-cg() {
+
+        padding: 10px;
+
+        .blog-main-news-container {
+            padding: 5px;
+        }
+
     }
 }

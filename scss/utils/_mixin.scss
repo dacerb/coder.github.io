@@ -1,0 +1,27 @@
+
+@mixin mobile-tg {
+    @media (max-width: 999px) { 
+        @content
+    }
+};
+
+@mixin mobile-tm {
+    @media (max-width: 737px) { 
+        @content;
+    }
+}
+
+@mixin mobile-cg {
+    @media (max-width: 500px) { 
+        @content;
+    }
+}
+
+@mixin mobile-cm {
+    @media (max-width: 460px) { 
+        @content;
+    }
+}
+
+
+

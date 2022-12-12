@@ -41,6 +41,28 @@ header .header-icons-logo-container {
         img {
             width: 30px;
         }
+
+        @include mobile-cm(){
+            justify-self: center;
+            max-width: 300px;
+            padding: 0;
+            width: 80%;
+            margin: 0;
+        }
+    }
+
+    @include mobile-tm() {
+        header .header-icons-logo-container {
+            width: 80%;
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 1fr 1fr;
+            height: auto;
+        }
+    }
+    @include mobile-cm() {
+        width: 100%;
+        padding: 0;
     }
     
 }
@@ -72,5 +94,39 @@ header .header-nav-container {
             color: $color-text-two;
         }
         
+    }
+
+    @include mobile-tm() {
+        ul {
+            width: 100%;
+            margin-top: 50px;
+            justify-items: center;
+            padding-bottom: 0;
+            -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+            -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+            box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+        
+            li {
+                display: block;
+                text-align: center;
+                margin-top: 0;
+                width: 100%;
+                line-height: 50px;
+                height: 50px;
+                background-image: $gradient-color-one;  
+                
+                :hover {
+                    transition: 0.3s;
+                    background-color: $color-accent-two; 
+                    border-bottom: 4px solid $color-accent-one;
+                    height: calc(50px - 4px);
+                }
+            }
+        }
+    }
+
+    @include mobile-cm() {
+        justify-content: start;
+        padding: 0;
     }
 }

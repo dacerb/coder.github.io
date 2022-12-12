@@ -60,6 +60,19 @@
             font-size: $size-box-text--card;
             border-left: 7px solid $color-accent-one;
         }
+        @include mobile-cg() {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+            width: 100%;
+        }
+    }
+
+    @include mobile-tm(){
+        margin-top: -20px;
+        
+    }
+
+    @include mobile-cg() {
+        padding: 10px;
     }
 
 }

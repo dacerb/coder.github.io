@@ -82,6 +82,16 @@
             }
 
         }
+
+        @include mobile-cm() {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+            padding: 0;
+        }
+    }
+
+    @include mobile-cm() {
+        padding: 10px;
+        padding: 0;
     }
 }
 

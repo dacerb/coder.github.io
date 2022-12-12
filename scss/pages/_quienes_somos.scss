@@ -29,6 +29,14 @@
             border-left: 7px solid $color-accent-one;
         }
     }
+
+    @include mobile-cg() {
+        padding: 10px;
+
+        .text-container {
+            width: auto;
+        }
+    }
     
 }
 
@@ -75,5 +83,13 @@
             font-size: $size-box-text--card;
             border-left: 7px solid $color-accent-one;
         }
+    }
+
+
+    @include mobile-cg(){
+        box-sizing: border-box;
+        width: 99%;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
     }
 }

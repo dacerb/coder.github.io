@@ -53,6 +53,24 @@ header .header-icons-logo-container {
     margin-right: 50px; }
     header .header-icons-logo-container .icons-container img {
       width: 30px; }
+    @media (max-width: 460px) {
+      header .header-icons-logo-container .icons-container {
+        justify-self: center;
+        max-width: 300px;
+        padding: 0;
+        width: 80%;
+        margin: 0; } }
+  @media (max-width: 737px) {
+    header .header-icons-logo-container header .header-icons-logo-container {
+      width: 80%;
+      display: grid;
+      gap: 20px;
+      grid-template-rows: 1fr 1fr;
+      height: auto; } }
+  @media (max-width: 460px) {
+    header .header-icons-logo-container {
+      width: 100%;
+      padding: 0; } }
 
 /* HEADER NAV Estilos Generales del SITIO */
 header .header-nav-container {
@@ -78,6 +96,32 @@ header .header-nav-container {
     header .header-nav-container li a:hover {
       font-weight: 800;
       color: InfoText; }
+  @media (max-width: 737px) {
+    header .header-nav-container ul {
+      width: 100%;
+      margin-top: 50px;
+      justify-items: center;
+      padding-bottom: 0;
+      -webkit-box-shadow: 0px 7px 66px -10px #857e85;
+      -moz-box-shadow: 0px 7px 66px -10px #857e85;
+      box-shadow: 0px 7px 66px -10px #857e85; }
+      header .header-nav-container ul li {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+        line-height: 50px;
+        height: 50px;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
+        header .header-nav-container ul li :hover {
+          transition: 0.3s;
+          background-color: rgba(0, 255, 0, 0.3);
+          border-bottom: 4px solid #F5DEB3;
+          height: calc(50px - 4px); } }
+  @media (max-width: 460px) {
+    header .header-nav-container {
+      justify-content: start;
+      padding: 0; } }
 
 /* ESTILOS DEL FOOTER */
 .footer-container {
@@ -114,6 +158,10 @@ header .header-nav-container {
       .footer-container .container_max_size .footer-nav-container ul li a:hover {
         font-weight: 900;
         color: InfoText; }
+      @media (max-width: 460px) {
+        .footer-container .container_max_size .footer-nav-container {
+          width: 100px;
+          padding: 0; } }
     .footer-container .container_max_size .footer-text-container {
       justify-self: start;
       margin-top: 20px;
@@ -139,6 +187,22 @@ header .header-nav-container {
         border-radius: 50%; }
       .footer-container .container_max_size .footer-text-container a img {
         width: 60px; }
+    @media (max-width: 999px) {
+      .footer-container .container_max_size {
+        width: 60%;
+        height: auto;
+        justify-items: center; } }
+    @media (max-width: 737px) {
+      .footer-container .container_max_size {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
+    @media (max-width: 500px) {
+      .footer-container .container_max_size {
+        box-sizing: border-box;
+        width: 100%; } }
+    @media (max-width: 500px) {
+      .footer-container .container_max_size {
+        box-sizing: border-box;
+        width: 100%; } }
 
 /* INICIO MAPS */
 .footer-map-container iframe {
@@ -159,6 +223,9 @@ header .header-nav-container {
   margin: 80px auto auto auto;
   width: 100%;
   padding: 25px; }
+  @media (max-width: 500px) {
+    .home-main-container, .home-main-detail-text-container {
+      padding: 10px; } }
 
 .home-main-container .container_max_size {
   display: grid;
@@ -184,6 +251,9 @@ header .header-nav-container {
       color: InactiveCaptionText;
       font-size: 1.1rem;
       border-left: 7px solid #F5DEB3; }
+  @media (max-width: 500px) {
+    .home-main-container .container_max_size {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
 
 /* SECCION DE TEXTO  */
 .home-main-detail-text-container .container_max_size.text-container {
@@ -236,6 +306,11 @@ header .header-nav-container {
       color: InactiveCaptionText;
       font-size: 1.1rem;
       border-left: 7px solid #F5DEB3; }
+  @media (max-width: 500px) {
+    .about-us-detail-container {
+      padding: 10px; }
+      .about-us-detail-container .text-container {
+        width: auto; } }
 
 .about-team-container {
   margin: 100px auto auto auto;
@@ -272,6 +347,12 @@ header .header-nav-container {
       color: InactiveCaptionText;
       font-size: 1rem;
       border-left: 7px solid #F5DEB3; }
+  @media (max-width: 500px) {
+    .about-team-container {
+      box-sizing: border-box;
+      width: 99%;
+      padding: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
 
 .contact-main {
   width: 100%;
@@ -336,6 +417,14 @@ header .header-nav-container {
           padding: 5px;
           width: 50%;
           min-width: 115px; }
+    @media (max-width: 460px) {
+      .contact-main .container_max_size {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        padding: 0; } }
+  @media (max-width: 460px) {
+    .contact-main {
+      padding: 10px;
+      padding: 0; } }
 
 .contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input:focus, .contact-main .container_max_size .contact-main-form-container .comment textarea:focus {
   transition: 0.6s;
@@ -390,6 +479,16 @@ header .header-nav-container {
       color: InactiveCaptionText;
       font-size: 1rem;
       border-left: 7px solid #F5DEB3; }
+    @media (max-width: 500px) {
+      .galery-main .galery-main-container-items {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        width: 100%; } }
+  @media (max-width: 737px) {
+    .galery-main {
+      margin-top: -20px; } }
+  @media (max-width: 500px) {
+    .galery-main {
+      padding: 10px; } }
 
 /* BLOG CONTENT */
 .blog-main {
@@ -480,3 +579,11 @@ header .header-nav-container {
       -webkit-box-shadow: 0px 7px 66px -10px #857e85;
       -moz-box-shadow: 0px 7px 66px -10px #857e85;
       box-shadow: 0px 7px 66px -10px #857e85; }
+    @media (max-width: 500px) {
+      .blog-main .blog-main-blogpost .blog-main-blogpost-items {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
+  @media (max-width: 500px) {
+    .blog-main {
+      padding: 10px; }
+      .blog-main .blog-main-news-container {
+        padding: 5px; } }
