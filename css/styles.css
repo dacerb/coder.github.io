@@ -89,13 +89,14 @@ header .header-nav-container {
     header .header-nav-container li a {
       letter-spacing: 2px;
       font-weight: 200;
-      padding: 15px;
+      padding: 10px;
       font-size: 1.3rem;
       text-decoration: none;
       color: #424949; }
+    header .header-nav-container li .active-menu {
+      font-weight: 900; }
     header .header-nav-container li a:hover {
-      font-weight: 800;
-      color: InfoText; }
+      font-weight: 900; }
   @media (max-width: 737px) {
     header .header-nav-container ul {
       width: 100%;
@@ -113,11 +114,8 @@ header .header-nav-container {
         line-height: 50px;
         height: 50px;
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
-        header .header-nav-container ul li :hover {
-          transition: 0.3s;
-          background-color: rgba(0, 255, 0, 0.3);
-          border-bottom: 4px solid #F5DEB3;
-          height: calc(50px - 4px); } }
+      header .header-nav-container ul :hover {
+        transition: 0.3s; } }
   @media (max-width: 460px) {
     header .header-nav-container {
       justify-content: start;
@@ -154,6 +152,9 @@ header .header-nav-container {
       .footer-container .container_max_size .footer-nav-container ul li a {
         text-decoration: none;
         font-size: 1.1rem;
+        color: InfoText; }
+      .footer-container .container_max_size .footer-nav-container .active-menu {
+        font-weight: 900;
         color: InfoText; }
       .footer-container .container_max_size .footer-nav-container ul li a:hover {
         font-weight: 900;

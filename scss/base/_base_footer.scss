@@ -35,6 +35,10 @@
                 text-decoration: none;
                 font-size: $size-box-text;
                 color: $color-text-two;
+
+            }.active-menu {
+                font-weight: 900;
+                color: $color-text-two;
             }
             ul li a:hover {
                 font-weight: 900;

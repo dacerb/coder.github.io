@@ -84,16 +84,16 @@ header .header-nav-container {
         a{
             letter-spacing: $space-letter;
             font-weight: 200;
-            padding: 15px;
+            padding: 10px;
             font-size: 1.3rem;
             text-decoration: none;
             color: $color-tile;
+        }.active-menu {
+            font-weight: 900;     
         }
         a:hover{
-            font-weight: 800;
-            color: $color-text-two;
+            font-weight: 900;
         }
-        
     }
 
     @include mobile-tm() {
@@ -113,14 +113,9 @@ header .header-nav-container {
                 width: 100%;
                 line-height: 50px;
                 height: 50px;
-                background-image: $gradient-color-one;  
-                
-                :hover {
-                    transition: 0.3s;
-                    background-color: $color-accent-two; 
-                    border-bottom: 4px solid $color-accent-one;
-                    height: calc(50px - 4px);
-                }
+                background-image: $gradient-color-one; 
+            }:hover {
+                transition: 0.3s;
             }
         }
     }
