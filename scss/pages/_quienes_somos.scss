@@ -6,19 +6,16 @@
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
-
     .text-container {
         width: 80%;    
         min-height: 350px;
         margin: 0 auto;
         padding: 25px;
         background-color: $tertiary-color;
-
         h2 {
             letter-spacing: $space-letter;
             font-size: $size-menu;
         }
-
         .body-text{
             letter-spacing: $space-letter;
             margin-top: 50px;
@@ -28,10 +25,8 @@
             border-left: 7px solid $color-accent-one;
         }
     }
-
     @include mobile-cg() {
         padding: 10px;
-
         .text-container {
             width: auto;
         }
@@ -48,42 +43,6 @@
     justify-items: center;
     padding: 20px;
     gap: 20px;
-
-    // VER SI PUEDE SER MIXIN DE CARD
-    .team-member-container {
-        width: 100%;
-        max-width: 400px;
-        box-sizing: border-box;
-        padding: 20px;
-        border: 1px solid $color-text-one;
-        border-top: 40px solid $first-color;
-        border-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        
-        img{
-            width: 100px;
-            margin: 0 auto;
-            object-fit: cover;
-        }
-
-        h4{
-            margin-top: 25px;
-            padding-left: 5px;
-            letter-spacing: $space-letter;
-            color: $color-text-one;
-            font-size: $size-menu--card;
-        }
-        p{
-            letter-spacing: $space-letter;
-            margin-top: 25px;
-            padding-left: 25px;
-            color: $color-text-one;
-            font-size: $size-box-text--card;
-            border-left: 7px solid $color-accent-one;
-        }
-    }
-
     @include mobile-cg(){
         box-sizing: border-box;
         width: 99%;

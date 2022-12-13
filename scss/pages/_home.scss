@@ -6,7 +6,6 @@
     margin: 80px auto auto auto;
     width: 100%;
     padding: 25px;
-
     @include mobile-cg() {
         padding: 10px;
     }
@@ -27,7 +26,6 @@
         width: 100%;  
         padding: 25px;
         background-color: $tertiary-color;
-
         h3 {
             letter-spacing: $space-letter;
             color: $color-tile;
@@ -52,7 +50,6 @@
     padding: 25px;
     margin-top: 100px;
     background-color: $tertiary-color;
-
     h3 {
         letter-spacing: $space-letter;
         color: $color-tile;

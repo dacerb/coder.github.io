@@ -1,0 +1,64 @@
+
+/* HEADER NAV Estilos Generales del SITIO */
+header .header-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    ul {
+        box-sizing: border-box;
+        padding-bottom: 40px;
+        border-bottom: 4px groove  $color-accent-one;
+        border-radius: 5%;
+        padding-left: 0;  /* Reset Bootstrap style */
+    }
+    li {
+        margin-top: 25px;
+        display: inline-block;
+        padding: 0 10px;
+        a{
+            letter-spacing: $space-letter;
+            font-weight: 200;
+            padding: 5px;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            color: $color-tile;
+        }.active-menu {
+            font-weight: 800;     
+        }
+        a:hover{
+            font-weight: 800;
+            transition-delay: 0.3s;
+        }
+    }
+
+    @include mobile-tm() {
+        ul {
+            width: 100%;
+            margin-top: 50px;
+            justify-items: center;
+            padding-bottom: 0;
+            -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+            -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+            box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
+        
+            li {
+                display: block;
+                text-align: center;
+                margin-top: 0;
+                width: 100%;
+                line-height: 50px;
+                height: 50px;
+                background-image: $gradient-color-one; 
+            }:hover {
+                transition: 0.3s;
+            }
+        }
+    }
+
+    @include mobile-cm() {
+        justify-content: start;
+        padding: 0;
+    }
+}

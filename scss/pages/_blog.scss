@@ -48,73 +48,7 @@
         }        
     }
 
-    /* POST blogs */
-    .blog-main-blogpost {
-        h3{
-            margin-top: 80px;
-            margin-bottom: 50px;
-            padding-left: 30px;
-            letter-spacing: $space-letter;
-            color: $color-tile;
-            font-size: $size-menu;
-            padding-bottom: 10px;
-            border-bottom: 4px solid $first-color;
-            text-transform: uppercase;
-        }
-        .blog-main-blogpost-items{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 20px;
-            .item{
-                width: 100%;
-                box-sizing: border-box;
-                padding: 20px 10px;
-                border: 1px solid $color-text-one;
-                border-top: 40px solid $first-color;
-                border-radius: 10px;
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                }
-                p{
-                    letter-spacing: $space-letter;
-                    margin-top: 25px;
-                    padding-left: 25px;
-                    color: $color-text-one;
-                    font-size: $size-box-text--card;
-                    border-left: 7px solid $color-accent-one;
-                    margin-bottom: 25px;
-                }
-                span{
-                    text-transform: uppercase;
-                    display: inline;   
-                    padding: 8px;
-                    border-radius: 15px 0 15px 0;
-                    letter-spacing: $space-letter;
-                    font-size: $size-menu--card;
-                    background-color: $color-accent-two;
-                    color: $color-text-one;
-                }
-                span:hover {
-                    background-color: $first-color;
-                    transition: 0.5s;
-                }
-            }
-            .item:hover {
-                border: 1px dotted $color-text-one;
-                border-top: 40px solid $first-color;
-                transition: 0.7s;
-                -webkit-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
-                -moz-box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
-                box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
-            }
-
-            @include mobile-cg() {
-                grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
-                
-            }
-        }
-    }
+    
 
     @include mobile-cg() {
 

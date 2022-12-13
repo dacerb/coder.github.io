@@ -1,0 +1,18 @@
+
+
+.boton {
+    &_show{
+        text-transform: uppercase;
+        display: inline;   
+        padding: 8px;
+        border-radius: 15px 0 15px 0;
+        letter-spacing: $space-letter;
+        font-size: $size-menu--card;
+        background-color: $color-accent-two;
+        color: $color-text-one;
+    }
+    &_show:hover {
+        background-color: $first-color;
+        transition: 0.5s;
+    }
+}
