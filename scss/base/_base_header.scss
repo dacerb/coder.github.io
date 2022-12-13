@@ -75,7 +75,7 @@ header .header-nav-container {
     padding: 5px;
     ul {
         padding-bottom: 20px;
-        border-bottom: 1px solid $color-accent-one;
+        border-bottom: 2px solid $color-accent-one;
         padding-left: 0;  /* Reset Bootstrap style */
     }
     li {
@@ -84,15 +84,17 @@ header .header-nav-container {
         a{
             letter-spacing: $space-letter;
             font-weight: 200;
-            padding: 10px;
+            padding: 5px;
             font-size: 1.3rem;
             text-decoration: none;
+            transition: all 0.2s;
             color: $color-tile;
         }.active-menu {
-            font-weight: 900;     
+            font-weight: 800;     
         }
         a:hover{
-            font-weight: 900;
+            font-weight: 800;
+            transition-delay: 0.3s;
         }
     }
 
