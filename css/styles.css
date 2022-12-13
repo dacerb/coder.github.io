@@ -260,6 +260,7 @@ header .header-nav-container {
       -moz-box-shadow: 0px 7px 66px -10px #857e85;
       box-shadow: 0px 7px 66px -10px #857e85; }
       header .header-nav-container ul li {
+        box-sizing: border-box;
         display: block;
         text-align: center;
         margin-top: 0;

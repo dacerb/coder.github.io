@@ -44,6 +44,7 @@ header .header-nav-container {
             box-shadow: 0px 7px 66px -10px rgba(133,126,133,1);
         
             li {
+                box-sizing: border-box;
                 display: block;
                 text-align: center;
                 margin-top: 0;
