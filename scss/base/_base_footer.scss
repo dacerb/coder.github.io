@@ -1,0 +1,124 @@
+/* ESTILOS DEL FOOTER */
+.footer-container {
+    margin-top: 150px;
+    background-color: $first-color;
+    border-top: 6px dotted $color-text-one;
+
+    .container_max_size {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+        height: 50vh;
+        padding: 10px;
+
+        .footer-nav-container {
+            width: 300px;
+            padding: 15px;
+            border-bottom: 16px double $color-text-two;
+            h4 {
+                letter-spacing: $space-letter;
+                color: $color-text-two;
+                font-size: $size-menu;
+            }
+            ul {  
+                margin-top: 30px;  
+                letter-spacing: $space-letter;
+                display: inline-block;
+                list-style-type: none;
+            }
+            ul li {
+                margin-top: 5px;
+            }
+            ul li a {
+                text-decoration: none;
+                font-size: $size-box-text;
+                color: $color-text-two;
+
+            }.active-menu {
+                font-weight: 900;
+                color: $color-text-two;
+            }
+            ul li a:hover {
+                font-weight: 900;
+                color: $color-text-two;
+            }
+            @include mobile-cm() {
+                width: 100px;
+                padding: 0;
+            }
+        }
+
+        .footer-text-container {
+            justify-self: start;
+            margin-top: 20px;
+            color: $color-text-two;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            p {
+                justify-self: center;
+                align-self: center;
+                font-size: $size-menu;
+                letter-spacing: $space-letter-copyright;
+                margin-left: 50px;
+            }
+
+            a {
+                background-color: $tertiary-color;
+                margin-top: 10px;
+                box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 50%;
+            }
+
+            a img{
+                width: 60px;
+            }
+        }
+
+
+        @include mobile-tg() {
+            width: 60%;
+            height: auto;
+            justify-items: center;
+        }
+
+        @include mobile-tm() {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+        }
+        @include mobile-cg() {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        @include mobile-cg() {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+
+
+    }
+}
+
+/* INICIO MAPS */
+.footer-map-container {
+    iframe {
+        height: 50vh;
+    }.map {
+        width: 100%;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }    
+}
+/* FIN MAPS */

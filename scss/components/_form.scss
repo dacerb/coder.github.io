@@ -1,0 +1,51 @@
+.contact-main-form-container {
+    box-sizing: border-box;
+    padding: 35px;
+    width: 100%;
+    background-color: $first-color;
+
+    .form-inpunt--container {
+        margin-top: 5px;
+        width: 100%;
+        letter-spacing: $space-letter;
+        color: $color-text-one;
+        font-size: $size-box-text--card;
+
+        .text-input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+            letter-spacing: $space-letter;
+            font-size: $size-box-text--card;
+            font-weight: 900;
+            color: color-text-two;
+        }
+    }
+
+    .comment {
+        display: flex;
+        flex-wrap: wrap;
+
+        textarea{
+            margin-top: 30px;
+            width: 100%;
+            min-height: 20vh;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+
+    .form-inpunt--container.button {
+        display: flex;
+        justify-content: end;
+        gap: 5px;
+
+        input { 
+            padding: 5px;
+            width: 50%;
+            min-width: 115px;
+        }
+        
+    }
+
+}

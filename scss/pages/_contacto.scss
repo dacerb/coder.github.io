@@ -1,0 +1,43 @@
+.contact-main {
+    width: 100%;
+    background-image: $gradient-color-one;
+    box-sizing: border-box;
+    margin-top: 80px;
+    padding: 25px;
+    .container_max_size {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+        justify-items: center;
+        .contact-main-container-text {
+            padding: 25px;
+            justify-self: end;
+            background-color: $tertiary-color;
+            h2{
+                margin-top: 25px;
+                padding-left: 5px;
+                letter-spacing: $space-letter;
+                color: $color-tile;
+                font-size: $size-menu;
+            }
+            p{
+                letter-spacing: $space-letter;
+                margin-top: 50px;
+                padding-left: 25px;
+                color: $color-text-one;
+                font-size: $size-box-text;
+                border-left: 7px solid $color-accent-one;
+            }
+        }
+        @include mobile-cg() {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr));
+        }
+    }
+    @include mobile-cm() {
+        padding: 0;
+    }
+}
+
+.contact-main .container_max_size .contact-main-form-container .form-inpunt--container .text-input:focus, .contact-main .container_max_size .contact-main-form-container .comment  textarea:focus {
+    transition: 0.6s;
+    background-color: $color-accent-tree;
+}

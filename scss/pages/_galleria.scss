@@ -1,0 +1,22 @@
+
+.galery-main {
+    //margin-top: 80px;
+    padding:20px;
+    .galery-main-container h2 {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        letter-spacing: $space-letter;
+        color: $color-tile;
+        font-size: $size-menu;
+        padding-bottom: 10px;
+        border-bottom: 4px solid $first-color;
+        text-transform: uppercase;
+    }
+    @include mobile-tm(){
+        margin-top: -20px;
+    }
+    @include mobile-cg() {
+        padding: 10px;
+    }
+}
