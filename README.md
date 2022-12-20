@@ -8,13 +8,24 @@
 ```
 ├───assets
 │   ├───img
+│   │   ├───blog
 │   │   ├───extra
 │   │   ├───favicon
+│   │   ├───galeria
 │   │   └───perfil
-│   └───logos
+│   ├───logos
+│   └───videos
 ├───css
 ├───doc
-└───pages
+│   ├───preEntrega1
+│   ├───preEntrega2
+│   └───preEntrega3
+├───pages
+└───scss
+    ├───base
+    ├───components
+    ├───pages
+    └───utils
 ```
 
 IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
