@@ -8,13 +8,24 @@
 ```
 ├───assets
 │   ├───img
+│   │   ├───blog
 │   │   ├───extra
 │   │   ├───favicon
+│   │   ├───galeria
 │   │   └───perfil
-│   └───logos
+│   ├───logos
+│   └───videos
 ├───css
 ├───doc
-└───pages
+│   ├───preEntrega1
+│   ├───preEntrega2
+│   └───preEntrega3
+├───pages
+└───scss
+    ├───base
+    ├───components
+    ├───pages
+    └───utils
 ```
 
 IR A  [**DECOD SITE**](https://dacerb.github.io/full-stack-coderhouse/)
@@ -54,3 +65,5 @@ inicia con watch.css que inicia al build-csss
 ````
 npm run watch-css
 ````
+
+[**Link netlify**](https://sparkly-lolly-2a9ba6.netlify.app/)
